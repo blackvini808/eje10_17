@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Breadcrumbs</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Sombreros Elegantes</h1>
+            <p>La mejor colección de sombrero con estilo.</p>
+        </header>
+
+        <div class="breadcrumbs">
+            <ul id="breadcrumbs-list">
+                <li><a href="#" onclick="navigate('home')">Inicio</a></li>
+                <li class="separador">/</li>
+                <li class="active">Catálogo</li>
+            </ul>
+        </div>
+
+        <nav>
+            <ul>
+                <li><button onclick="navigateTo('home')" class="active" id="btn-home">Inicio</button></li>
+                <li><button onclick="navigateTo('catalog')" class="active" id="btn-catalog">Catálogo</button></li>
+                <li><button onclick="navigateTo('men')" class="active" id="btn-men">Caballeros</button></li>
+                <li><button onclick="navigateTo('women')" class="active" id="btn-women">Damas</button></li>
+                <li><button onclick="navigateTo('contact')" class="active" id="btn-contact">Contáctanos</button></li>
+            </ul>
+        </nav>
+
+        <main id="main-content">
+            <h2 class="section-title">Bienvenido a Sombreros Elegantes</h2>
+            <p class="section-description">Descubre nuestras exclusiva colección de sombreros<br>para cada ocasion.
+                Calidad premium y con diseños únicos.</p>
+        </main>
+
+        <footer>
+            <p>&COPY; 2025 Sombreros Elegantes. Todos los derechos reservados.</p>
+        </footer>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
